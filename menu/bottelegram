@@ -15,7 +15,7 @@ useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
 if [[ $date_list < $useexp ]]; then
 echo -ne
 else
-systemctl stop nginx
+# systemctl stop nginx
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
